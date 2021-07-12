@@ -9,8 +9,4 @@ public class HomePage {
         this.browser = browser;
     }
 
-    public LoginPage clickonSignIn(){
-        browser.clickLink("Sign in");
-        return new LoginPage(browser);
-    }
 }

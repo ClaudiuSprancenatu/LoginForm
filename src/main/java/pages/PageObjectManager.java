@@ -12,10 +12,10 @@ public class PageObjectManager {
         basePage = new BasePage(driver);
     }
 
-    public LoginPage getLoginPage(){
-        return (loginPage == null) ? loginPage = new LoginPage(basePage) : loginPage;
-    }
     public HomePage getHomePage(){
         return (homePage == null) ? homePage = new HomePage(basePage) : homePage;
+    }
+    public LoginPage getLoginPage(){
+        return (loginPage == null) ? loginPage = new LoginPage(basePage) : loginPage;
     }
 }
